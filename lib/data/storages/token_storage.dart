@@ -4,4 +4,6 @@ abstract interface class TokenStorageInterface {
   Future<String?> getToken();
 
   Future<void> clearToken();
+
+  Future<bool> hasToken();
 }
