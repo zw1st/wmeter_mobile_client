@@ -1,10 +1,13 @@
 import 'package:decimal/decimal.dart';
 
-class Reading {
+class ReadingModel {
   final int id;
   final DateTime createdAt;
   final Decimal value;
-  final int meterId;
 
-  Reading(this.id, this.createdAt, this.value, this.meterId);
+  const ReadingModel({
+    required this.id,
+    required this.createdAt,
+    required this.value,
+  });
 }

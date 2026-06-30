@@ -3,7 +3,11 @@ class UserModel {
   final String name;
   final DateTime createdAt;
   final String email;
-  final String password;
 
-  UserModel(this.id, this.name, this.createdAt, this.email, this.password);
+  const UserModel({
+    required this.id,
+    required this.name,
+    required this.createdAt,
+    required this.email,
+  });
 }

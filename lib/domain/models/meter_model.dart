@@ -5,16 +5,14 @@ class MeterModel {
   final int id;
   final MeterType meterType;
   final DateTime createdAt;
-  final int userId;
   final DateTime? lastCheckDate;
   final Decimal currentValue;
 
-  MeterModel(
-    this.id,
-    this.meterType,
-    this.createdAt,
-    this.userId,
-    this.lastCheckDate,
-    this.currentValue,
-  );
+  const MeterModel({
+    required this.id,
+    required this.meterType,
+    required this.createdAt,
+    required this.lastCheckDate,
+    required this.currentValue,
+  });
 }
